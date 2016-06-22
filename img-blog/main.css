@@ -1,0 +1,17 @@
+img {
+    width: 30%;
+    margin: 1.66%;
+    float: left;
+}
+
+.title {
+    text-transform: uppercase;
+    font-family: 'Sarala', sans-serif;
+    margin-left: 1.66%;
+    
+    font-size: 30px;
+    font-weight: bolder;
+    width: 30%;
+    border-bottom: 2px solid #d2d2d2;
+}
+

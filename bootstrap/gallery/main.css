@@ -19,3 +19,7 @@ body {
     color: white;
     background: #1b2732;
 }
+
+.highlight {
+    background: yellow;
+}

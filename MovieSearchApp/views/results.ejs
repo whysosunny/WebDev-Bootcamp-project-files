@@ -1,0 +1,38 @@
+<H1>Results Page</H1>
+
+<style>
+    table,tr,th,td {
+        border: 1px solid black;
+    }
+    td {
+        padding: 3px;
+    }
+</style>
+
+<form action="/searchMovie" method="post">
+    <input type="text" name="searchString" name="search">
+    <input type="submit">
+</form>
+
+<table>
+    <thead>
+    <tr>
+        <th>Title</th>
+        <th>Year</th>
+        <th>Imdb ID</th>
+        <th>Type</th>
+        <th>Poster</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% for(var i=0; i<results.length; i++) { %>
+    <tr>
+        <td><%=results[i]["Title"]%></td>
+        <td><%=results[i]["Year"]%></td>
+        <td><%=results[i]["imdbID"]%></td>
+        <td><%=results[i]["Type"]%></td>
+        <td><a href="<%=results[i]["Poster"]%>" target="_blank">Link</a></td>
+    </tr>
+    <% } %>
+    </tbody>
+</table>
